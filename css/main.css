@@ -1,11 +1,27 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Mulish', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 /* navbar */
 .navbar{
-    position: relative;
-    z-index: 1;
+    z-index: 99;
+    transition:500ms ease;
+    padding-bottom: 0%;
+    padding-top: 0%;
+   
+}
+.navbar.scrolled{
+    background-color:white;
+    box-shadow: 0 2px 12px -0 black;
+    
 }
 .navbar-brand{
     font-weight: 700;
@@ -162,6 +178,7 @@ body{
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) { 
+    
     .navbar-brand, .nav-link{
         color: white !important;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
@@ -198,4 +215,10 @@ body{
     .testimonials h5{
         font-size: 32px;
     }
+ }
+ @media (max-width: 992px) { 
+     .navbar{
+         background-color: white;
+         padding-bottom: 2%;
+     }
  }
