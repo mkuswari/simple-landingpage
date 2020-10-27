@@ -19,8 +19,8 @@ html {
    
 }
 .navbar.scrolled{
-    background-color:white;
-    box-shadow: 0 2px 12px -0 black;
+    background-color:blue;
+    box-shadow: 0 2px 12px -0 white;
     
 }
 .navbar-brand{
